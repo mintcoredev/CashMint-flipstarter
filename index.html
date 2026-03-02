@@ -31,16 +31,15 @@
     }
 
     .header {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
       margin-bottom: 1.5rem;
     }
 
-    .logo {
-      height: 48px;
-      width: auto;
-      object-fit: contain;
+    .header-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      margin-bottom: 1rem;
     }
 
     h1 {
@@ -109,7 +108,8 @@
 
     <div class="header">
       <img src="assets/copilot_image_1772475436039.jpeg" alt="CashMint Studio Header" class="header-image" />
-      <h1 id="title">Loading campaign…</h1>
+      <h1>MintCore &amp; CashMint Studio</h1>
+      <h2>Builder-First CashTokens Stack</h2>
     </div>
 
     <div id="description" class="goal"></div>
@@ -138,7 +138,6 @@
       const response = await fetch("campaign.json");
       const data = await response.json();
 
-      document.getElementById("title").textContent = data.title;
       document.getElementById("description").textContent = data.description;
       document.getElementById("goal").textContent = data.goal.amount;
 
