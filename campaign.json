@@ -1,0 +1,38 @@
+{
+  "title": "MintCore & CashMint Studio – Builder-First CashTokens Stack",
+  "description": "Funding MintCore (CashTokens SDK) and CashMint Studio (creator minting platform) to deliver a clean, documented, production-ready stack for the Bitcoin Cash ecosystem.",
+  "version": 1,
+  "goal": {
+    "amount": 25,
+    "currency": "BCH"
+  },
+  "recipients": [
+    {
+      "name": "CashMint Studio Inc. – Development",
+      "address": "bitcoincash:REPLACE_WITH_YOUR_ADDRESS",
+      "percentage": 100
+    }
+  ],
+  "milestones": [
+    {
+      "name": "MintCore foundation",
+      "description": "Core API surface, comprehensive tests, and v1.0.0 release.",
+      "amount": 8
+    },
+    {
+      "name": "CashMint Studio MVP",
+      "description": "End-to-end creator minting flow, fungible tokens + basic NFTs, hosted MVP.",
+      "amount": 9
+    },
+    {
+      "name": "Docs, templates, and examples",
+      "description": "Developer docs, creator docs, example repos, and ready-to-fork templates.",
+      "amount": 5
+    },
+    {
+      "name": "Ecosystem integration & polish",
+      "description": "Integration support, roadmap, governance docs, UX polish.",
+      "amount": 3
+    }
+  ]
+}
