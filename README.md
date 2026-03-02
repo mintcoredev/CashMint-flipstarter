@@ -95,7 +95,7 @@ Together, they give:
 - **Documentation, examples, and templates:** 25%  
 - **Ecosystem support & coordination:** 15%  
 
-All code will be **open-source** and published under a permissive license.
+All code for MintCore will be **open-source** and published under a permissive license.
 
 ---
 
