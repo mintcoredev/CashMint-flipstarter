@@ -4,7 +4,7 @@
 
 We’re funding **MintCore** (the CashTokens SDK) and **CashMint Studio** (the creator-first minting platform) to give builders a **clean, well-documented, production-ready stack** for CashTokens on Bitcoin Cash.
 
-- **Goal:** 25 BCH  
+- **Goal:** 25 BCH  
 - **Funding model:** All-or-nothing via Flipstarter  
 - **Scope:** MintCore SDK hardening, CashMint Studio MVP, docs, templates, and ecosystem onboarding
 
@@ -63,25 +63,25 @@ Together, they give:
 
 ## Milestones
 
-### Milestone 1 – MintCore foundation (20 BCH)
+### Milestone 1 – MintCore foundation (8 BCH)
 
 - Lock in **core API surface**
 - Add **comprehensive tests** for main flows
 - Publish **v1.0.0** with changelog and docs
 
-### Milestone 2 – CashMint Studio MVP (25 BCH)
+### Milestone 2 – CashMint Studio MVP (9 BCH)
 
 - Implement **end-to-end creator minting flow**
 - Support **fungible tokens + basic NFTs**
 - Ship a **hosted MVP** with clear onboarding
 
-### Milestone 3 – Docs, templates, and examples (20 BCH)
+### Milestone 3 – Docs, templates, and examples (5 BCH)
 
 - Developer docs for MintCore
 - Creator docs for CashMint Studio
 - Example repos and **ready-to-fork templates**
 
-### Milestone 4 – Ecosystem integration & polish (15 BCH)
+### Milestone 4 – Ecosystem integration & polish (3 BCH)
 
 - Integration support for early adopters
 - Public roadmap, release cadence, and governance docs
