@@ -233,6 +233,7 @@
     </div>
   </div>
 
+  <script src="pledge.js"></script>
   <script>
     async function loadCampaign() {
       const response = await fetch("campaign.json");
@@ -241,7 +242,7 @@
       document.getElementById("description").textContent = data.description;
       document.getElementById("goal").textContent = data.goal.amount;
 
-      const pledged = 0; // Copilot will wire this to real Flipstarter JS
+      const pledged = 0;
       const goal = data.goal.amount;
       const percent = (pledged / goal) * 100;
 
@@ -261,13 +262,41 @@
         milestoneContainer.appendChild(div);
       });
 
+      const recipient = data.recipients && data.recipients[0]
+        ? data.recipients[0].address
+        : "";
+
       document.getElementById("pledge-button").onclick = () => {
-        alert("Flipstarter pledge flow will be wired here.");
+        window.pledgeFlow.openPledgeModal({
+          recipientAddress: recipient,
+          goalBch: goal,
+          onSuccess(uri) {
+            const msg = document.getElementById("pledge-success");
+            if (msg) {
+              msg.style.display = "block";
+              // Build the link safely without innerHTML interpolation
+              const text = document.createTextNode(
+                "Thank you for pledging! Open your BCH wallet with the link below: "
+              );
+              const link = document.createElement("a");
+              link.href = uri;
+              link.style.wordBreak = "break-all";
+              link.textContent = uri;
+              msg.textContent = "";
+              msg.appendChild(text);
+              msg.appendChild(link);
+            } else {
+              window.location.href = uri;
+            }
+          },
+        });
       };
     }
 
     loadCampaign();
   </script>
+  <div id="pledge-success" role="status" aria-live="polite"
+       style="display:none;margin-top:1rem;padding:1rem;background:#d4edda;border:1px solid #c3e6cb;border-radius:6px;color:#155724;"></div>
 
 <section>
 
