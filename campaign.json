@@ -15,24 +15,29 @@
   ],
   "milestones": [
     {
-      "name": "MintCore foundation",
-      "description": "Core API surface, comprehensive tests, and v1.0.0 release.",
+      "name": "MintCore v1 Release",
+      "description": "Finalized APIs, improved error handling, consistent transaction-building patterns, and a clean developer experience for the first stable release.",
       "amount": 8
     },
     {
-      "name": "CashMint Studio MVP",
-      "description": "End-to-end creator minting flow, fungible tokens + basic NFTs, hosted MVP.",
-      "amount": 9
+      "name": "CashMint Studio: Creator-Friendly Minting Flow",
+      "description": "Complete minting flow with intuitive UI steps, safe defaults, clear validation, and a guided experience for creators minting fungible tokens and NFTs.",
+      "amount": 7
     },
     {
-      "name": "Docs, templates, and examples",
-      "description": "Developer docs, creator docs, example repos, and ready-to-fork templates.",
+      "name": "Documentation and Examples",
+      "description": "Thorough documentation for MintCore and CashMint Studio, including examples, walkthroughs, and practical guides for developers and creators.",
       "amount": 5
     },
     {
-      "name": "Ecosystem integration & polish",
-      "description": "Integration support, roadmap, governance docs, UX polish.",
+      "name": "Accessibility and UX Improvements",
+      "description": "Improved layout, readability, keyboard navigation, mobile responsiveness, and overall clarity so the Studio feels welcoming and easy to use for everyone.",
       "amount": 3
+    },
+    {
+      "name": "Testing, Stability, and Final Polish",
+      "description": "Strengthened test coverage, improved stability, tightened edge cases, and final polish to ensure both MintCore and the Studio are ready for real-world use.",
+      "amount": 2
     }
   ]
 }
